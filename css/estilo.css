@@ -1,0 +1,85 @@
+
+:root {
+    --black: rgb(0, 0, 0);
+    --fondo:  #FFFFFF;
+    --contenedor: #660708;
+    --hoover: #004E89;
+    --respuestaA: #0B090A;
+    --respuestaB: #161A1D;
+    --respuestac: #282929;
+    --respuestaD: #3D3D3D;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    background-color: var(--fondo)
+}
+
+.formularioQuiz{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 15px;
+    background-color: var(--contenedor);
+}
+
+.contenedorPregunta{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin-bottom: 50px;
+
+}
+
+.pregunta{
+    width: 97%;
+    font-size: 1.5em;
+    background-color: var(--fondo);
+    color: white;
+    font-weight: bold;
+}
+
+label{
+    display: flex;
+    height: 15%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /* margin: auto; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    margin: 5%;
+    border-radius: 15px;
+    font-size: 1.2em;
+    border-style: outset;
+    border-color: #FFFFFF;
+
+}
+
+label:hover {
+    background-color: var(--hoover)
+}
+.boton{
+    width: 15%;
+
+}
+
+.correcta {
+    background-color: rgb(20, 118, 62);
+    box-shadow: 10px 10px 5px 0px rgba(255,255,255,1);
+
+}
+
+.incorrecta {
+    background-color: red;
+    box-shadow: 10px 10px 5px 0px rgba(255,255,255,1);
+}

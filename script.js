@@ -1,7 +1,7 @@
 let formulario = document.querySelector("form");
 let aciertos = 0;
 let errores = 0;
-//let labels = document.querySelectorAll("label");
+
 
 const respuestas = {
 	pregunta01: "dios",
@@ -68,10 +68,11 @@ formulario.addEventListener("submit", function(event) {
 
 	//meter en array las label que las contienen
 	const labels = [label1, label2, label3, label4, label5, label6, label7, label8, label9, label10]
+	
 	//pasar objeto de respuestas a array
 	const comparar =  Object.values(respuestas);
 
-	//comparar las de usuario con las respuesta correctas
+	//comparar las selecciones edel usuario con las respuesta correctas y modificar label
 	for (let i = 0; i <elegidas.length ; i++){
 		if (elegidas[i] == comparar[i]){
 			console.log (`Has acertado la pregunta ${i+1}`)
@@ -84,6 +85,25 @@ formulario.addEventListener("submit", function(event) {
 		}
 	
 	}
+
 	
+	alert(`Aciertos: ${aciertos} de 10\n Errores: ${errores} de 10`);
+
+	//cambiar musica
+	let audio = document.querySelector("audio")
+	audio.setAttribute('src', '../assets/audios/resultado.wav');
+
+	//se oculta el boton "comprobar resultados" para evitar que envie de nuevo y se duplique la validacion
+	let noenviar = document.getElementsByClassName("pulsar")
+	noenviar[0].style.display = "none";
+	
+	//Para volvera jugar
+	let preError = document.createElement("pre");
+	let a = document.createElement("a");
+    a.setAttribute("href", "../index.html");
+    let aTexto = document.createTextNode("Pincha para jugar de nuevo");
+    a.appendChild(aTexto);
+    preError.appendChild(a);
+    formulario.appendChild(preError)
 
 })

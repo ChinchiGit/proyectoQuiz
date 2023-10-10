@@ -30,7 +30,25 @@ body{
     border-radius: 15px;
     background-color: rgba(102, 7, 8, .8);
     padding-top: 15px;
+    padding-bottom: 20px;
 }
+
+#pulsar {
+    border-radius: 10px;
+    background-color: var(--respuestaD);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: x-large;
+    font-weight: bolder;
+
+}
+
+
+/* QUIZ.HTML */
 
 .contenedorPregunta{
     width: 95%;
@@ -39,7 +57,7 @@ body{
     flex-direction: column;
     height: 95vh;
     margin-bottom: 50px;
-    background-color: rgba(40, 9, 9, 0.9);
+    background-color: #280909e6;
     padding-top: 20px;
     border-radius: 15px;
 
@@ -58,7 +76,6 @@ body{
 
 label{
     display: flex;
-    height: 15%;
     padding-top: 30px;
     padding-bottom: 30px;
     /* margin: auto; */
@@ -68,7 +85,7 @@ label{
     align-items: center;
     justify-content: flex-start;
     text-align: left;
-    margin: 5%;
+    margin: 5px;
     border-radius: 15px;
     font-size: 1.2em;
     border-style: outset;
@@ -79,11 +96,20 @@ label{
 label:hover {
     background-color: var(--hoover)
 }
+
 .boton{
     width: 15%;
-
 }
 
+.iconoPreguntas{
+    max-width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+    opacity: 0.78;
+}
+
+/* QUIZ. HTML CLASES VALIDACION*/
 .correcta {
     background-color: rgb(20, 118, 62);
     box-shadow: 10px 10px 5px 0px rgba(255,255,255,1);
@@ -95,16 +121,29 @@ label:hover {
     box-shadow: 10px 10px 5px 0px rgba(255,255,255,1);
 }
 
+
+/* INDEX.HTML*/
+
+#headerImg{
+    width: 95%;
+    background-color: rgba(61, 61, 61, .8);
+    margin-top: 5px;
+}
+
 #fotoDonGenaro{
     background-image: url(../assets/img/abueloRefranes.jpg);
     object-fit: cover;
-    width:95%;
-    margin:auto;
+    width: 95%;
+    max-height: 250px;
+    margin: auto;
     border-radius: 20px;
     text-align: left;
-    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 330px;
 }
-
+    
 #cita{
     width: 30%;
     padding-top: 30px;
@@ -115,3 +154,64 @@ label:hover {
     
 }
 
+.icono{
+    width: 30px;
+    height: 30px;
+}
+
+button>a:link{
+    color: #FFFFFF;
+}
+
+button>a:active{
+    color: #A4161A;
+}
+
+button>a:visited{
+    color: #f2eb69;
+}
+
+
+/* MEDIAQUERIES */
+
+@media only screen and (min-width: 768px) {
+    .contenedorPregunta {
+        width: 95%;
+        margin: auto;
+        display: flex;
+        height: 95vh;
+        margin-bottom: 50px;
+        background-color: #280909e6;
+        padding-top: 20px;
+        border-radius: 15px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    label{
+        width: 45%;
+        max-height: 20%;
+    }
+
+    .pregunta{
+        max-height: 10%;
+    }
+
+    #headerImg{
+        width: 500px;
+        margin-top: 50px;
+    }
+
+    .iconoPreguntas{
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 1366px) {
+
+    .formularioQuiz {
+        width: 70%;
+        }
+    }

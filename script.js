@@ -83,7 +83,6 @@ formulario.addEventListener("submit", function(event) {
 			errores++;
 		}
 	
-
 	}
 	
 

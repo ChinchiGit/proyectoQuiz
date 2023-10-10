@@ -33,6 +33,57 @@ body{
     padding-bottom: 20px;
 }
 
+
+a:link{
+    color: #FFFFFF;
+}
+
+a:active{
+    color: #A4161A;
+}
+
+a:visited{
+    color: #f2eb69;
+}
+
+
+/* INDEX.HTML*/
+
+#headerImg{
+    width: 95%;
+    background-color: rgba(61, 61, 61, .8);
+    margin-top: 5px;
+}
+
+#fotoDonGenaro{
+    background-image: url(../assets/img/abueloRefranes.jpg);
+    object-fit: cover;
+    width: 95%;
+    max-height: 250px;
+    margin: auto;
+    border-radius: 20px;
+    text-align: left;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 330px;
+}
+    
+#cita{
+    width: 30%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    
+}
+
+.icono{
+    width: 30px;
+    height: 30px;
+}
+
 #pulsar {
     border-radius: 10px;
     background-color: var(--respuestaD);
@@ -44,8 +95,8 @@ body{
     align-items: center;
     font-size: x-large;
     font-weight: bolder;
-
 }
+
 
 
 /* QUIZ.HTML */
@@ -119,56 +170,6 @@ label:hover {
 .incorrecta {
     background-color: red;
     box-shadow: 10px 10px 5px 0px rgba(255,255,255,1);
-}
-
-
-/* INDEX.HTML*/
-
-#headerImg{
-    width: 95%;
-    background-color: rgba(61, 61, 61, .8);
-    margin-top: 5px;
-}
-
-#fotoDonGenaro{
-    background-image: url(../assets/img/abueloRefranes.jpg);
-    object-fit: cover;
-    width: 95%;
-    max-height: 250px;
-    margin: auto;
-    border-radius: 20px;
-    text-align: left;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 330px;
-}
-    
-#cita{
-    width: 30%;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-left: 15px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bolder;
-    
-}
-
-.icono{
-    width: 30px;
-    height: 30px;
-}
-
-button>a:link{
-    color: #FFFFFF;
-}
-
-button>a:active{
-    color: #A4161A;
-}
-
-button>a:visited{
-    color: #f2eb69;
 }
 
 
